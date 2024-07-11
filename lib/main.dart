@@ -17,17 +17,14 @@ class Home extends StatelessWidget {
     backgroundColor: Colors.amber[600],
     ),
     body: Center(
-      child: ElevatedButton.icon(
-          onPressed: () {
-            print('you clicked me again! it felt good');
-          },
-          icon: Icon(
-            Icons.mail
-          ),
-          label: Text('mail me'),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.amber[600],
-          ),
+      child: IconButton(
+        onPressed: () {
+          print('you clicked me again! stop it!');
+        },
+        icon : Icon(
+          Icons.alternate_email
+        ),
+        color: Colors.amber[600],
       ),
 
     ),
