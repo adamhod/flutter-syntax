@@ -15,6 +15,7 @@ void main() {
             fontSize: 20.0,
             fontWeight: FontWeight.bold,
             color: Colors.amber[600],
+            fontFamily: 'Roboto',
           ),
         ),
       ),
