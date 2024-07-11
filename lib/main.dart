@@ -2,32 +2,37 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text('my first app'),
-        centerTitle: true,
-        backgroundColor: Colors.amber[600],
-      ),
-      body: Center(
-        child: Text(
-            'hello',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            color: Colors.amber[600],
-            fontFamily: 'Roboto',
-          ),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {  },
-        child: Text('click'),
-        backgroundColor: Colors.amber[600],
-
-      ),
-    ), //home = what is shown on first page when app is opened
+    home: Home()
   ));
 }
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+        title: Text('my first app'),
+    centerTitle: true,
+    backgroundColor: Colors.amber[600],
+    ),
+    body: Center(
+      child: Image(
+        image: AssetImage('images/space-phone-1200-x-2242-background-wqyvmlrro9k8yjoz.webp'),
+      ),
+    ),
+    floatingActionButton: FloatingActionButton(
+    onPressed: () {},
+    backgroundColor: Colors.amber[600],
+    child: Text('click'),
+
+
+    ));
+  }
+}
+
+
+
 
 
 
