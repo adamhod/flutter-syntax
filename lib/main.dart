@@ -17,11 +17,25 @@ class Home extends StatelessWidget {
     backgroundColor: Colors.amber[600],
     ),
     body: Center(
-      child: Icon(
-        Icons.airport_shuttle,
-        color: Colors.amber[600],
-        size: 50.0,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Icon(
+            Icons.airport_shuttle,
+            color: Colors.amber[600],
+            size: 50.0,
+          ),
+          SizedBox(height: 20),
+          FloatingActionButton(
+            onPressed: () {
+              print('you clicked me');
+            },
+            backgroundColor: Colors.green[200],
+            child: Text('click me'),
+          ),
+        ],
       ),
+
     ),
     floatingActionButton: FloatingActionButton(
     onPressed: () {},
@@ -32,6 +46,8 @@ class Home extends StatelessWidget {
     ));
   }
 }
+
+
 
 
 
